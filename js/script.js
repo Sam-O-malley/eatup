@@ -11,9 +11,9 @@ function getData() {
            'a952103b6e48c2a40500499f78ff2c5b');
        },  // This inserts the api key into the HTTP header
            success: function(response){ 
-               console.log(response) 
+               console.log(response)
+            //    document.getElementById("mainContainer").innerHTML = "";
             }
-           // document.getElementById("mainContainer").innerHTML = "";
        });
     }  
     getData(); 
