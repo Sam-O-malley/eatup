@@ -1,3 +1,5 @@
+var minIncome = 100;
+var maxIncome = 200;
 function getData() {
 
     $.ajax({
@@ -12,7 +14,7 @@ function getData() {
        },  // This inserts the api key into the HTTP header
 
            success: function(response){
-              //  console.log(response);
+               console.log(response);
                var i =0
                for (i = 0; response.best_rated_restaurant.length; i++){
               //  console.log(response.best_rated_restaurant[0].restaurant.name, response.best_rated_restaurant[0].restaurant.location.address, response.best_rated_restaurant[0].restaurant.average_cost_for_two,  );
@@ -20,5 +22,22 @@ function getData() {
               }
             }
        });
-    }  
-    getData(); 
+    }
+    
+    $( function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 100000,
+        values: [ 10000, 50000 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+          minIncome = ui.values[ 0 ];
+          maxIncome = ui.values[ 1 ];
+    
+      },
+      stop:function(event, ui){
+          getData();
+      }
+      });
+    }); 
