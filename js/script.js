@@ -16,7 +16,7 @@ function getData() {
            success: function(response){
                console.log(response);
                var i =0;
-               for (i = 0; response.best_rated_restaurant.length; i++){
+               for (i = 0; i < response.best_rated_restaurant.length; i++){
               //  console.log(response.best_rated_restaurant[0].restaurant.name, response.best_rated_restaurant[0].restaurant.location.address, response.best_rated_restaurant[0].restaurant.average_cost_for_two,  );
                console.log(response.best_rated_restaurant[i].restaurant.average_cost_for_two); 
               }
