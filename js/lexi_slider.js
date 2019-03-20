@@ -1,7 +1,7 @@
 // google.charts.load('current', {'packages':['corechart']});
 // var mockarooKey;
-var minIncome = 100;
-var maxIncome = 200;
+var minTotal = 15;
+var maxTotal = 60;
 // var minAge = 10;
 // var maxAge = 100;
 
@@ -9,12 +9,12 @@ $( function() {
   $( "#slider-range" ).slider({
     range: true,
     min: 0,
-    max: 100000,
-    values: [ 10000, 50000 ],
+    max: 65,
+    values: [ 0, 65 ],
     slide: function( event, ui ) {
       $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      minIncome = ui.values[ 0 ];
-      maxIncome = ui.values[ 1 ];
+      minTotal = ui.values[ 0 ];
+      maxTotal = ui.values[ 1 ];
 
   },
   stop:function(event, ui){
