@@ -37,12 +37,12 @@ html, body {
 }
 
 .mainBody__content {
-  width: 300px;
+  width: 320px;
   height: 520px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -160px;
   margin-top: -230px;
 }
 
@@ -59,6 +59,78 @@ html, body {
   font-weight: 700;
   letter-spacing: 3px;
   padding-bottom: 5px;
+}
+
+.navCuisine {
+  height: 80px;
+  background-color: #312D3D;
+}
+
+.navCuisine__right {
+  padding: 0px;
+}
+
+.navCuisine__logo {
+  height: 55px;
+}
+
+.navCuisine__arrow {
+  height: 50px;
+}
+
+.navCuisine__left {
+  padding: 0px;
+}
+
+.cuisineBody {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #312D3D;
+}
+
+.cuisineBodyContainer {
+  min-height: 100%;
+  position: relative;
+}
+
+.cuisineBody__content {
+  width: 340px;
+  height: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -240px;
+}
+
+.cuisineBody__sushiBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.cuisineBody__otherBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 22px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
