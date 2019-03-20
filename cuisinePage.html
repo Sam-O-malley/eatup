@@ -5,32 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>cuisine page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/vnd.microsoft.icon">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700" rel="stylesheet"> 
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- css -->
     <link rel="stylesheet" type="text/css" media="screen" href="mainCss/css/style.css"/>
    
-   
+    
 </head>
 <body>
+    
 <!-- navigation -->
-    <nav class="navbar navbar-default fixed-top navMain">
-        <div class="container-fluid navMain__right">
+    <nav class="navbar navbar-default fixed-top navCuisine">
+        <div class="container-fluid navCuisine__left">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navCuisine__arrow" src="images/arrow.svg" alt="">
                 </a>
             </div>
-            <div class="navbar-right">
+            <div class="navbar-right navCuisine__right">
                 <a href="">
-                    <img class="navMain__question" src="images/eatupLogo.svg" alt="">
+                    <img class="navCuisine__logo" src="images/eatupLogo.svg" alt="">
                 </a>
             </div>
         </div>
     </nav>
+
 <!-- body -->
     <div id="cuisineBodyContainer">
         <div class="container-fluid cuisineBody">
-            <div class="mainBody__content">
-                
+            <div class="cuisineBody__content">
+                <a href="">
+                    <button class="cuisineBody__sushiBtn">sushi</button>
+                </a>
+                <a href="">
+                    <button class="cuisineBody__otherBtn">fast food</button>
+                </a>
+                <a href="">
+                    <button class="cuisineBody__otherBtn">bar food</button>
+                </a> 
+                <a href="">
+                    <button class="cuisineBody__otherBtn">vegetarian</button>
+                </a>  
+                <a href="">
+                    <button class="cuisineBody__otherBtn">indian</button>
+                </a>  
             </div>
         </div>
     </div>    
