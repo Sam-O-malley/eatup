@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+.navRating{
+    height: 80px;
+    background-color: $deepPurple;
+}
+.navRating__right{
+    padding: 0px;
+}
+.navRating__logo{
+    height: 55px;
+}
+.navRating__arrow{
+    height: 50px;
+}
+.navRating__left{
+    padding: 0px;
+}

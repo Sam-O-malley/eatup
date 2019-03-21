@@ -47,8 +47,7 @@ url: 'https://developers.zomato.com/api/v2.1/location_details?entity_id=71&entit
 
       console.log(api_container.innerHTML += ('<h4 class=card-title>' + response.best_rated_restaurant[i].restaurant.cuisines));
 
-
-
+  
           console.log(zomato_api);  
             zomato_api.appendChild(api_container);
          }

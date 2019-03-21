@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+.priceBody{
+    min-height:100vh;
+    min-width: 100%;
+    background-color: $deepPurple;
+}
+.priceBodyContainer{
+    min-height: 100%;
+    position: relative;
+}
+.priceBody__content{
+    background-color: #666;
+    width: 340px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: -240px;
+}
+
