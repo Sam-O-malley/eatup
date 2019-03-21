@@ -59,6 +59,7 @@ html, body {
   font-weight: 700;
   letter-spacing: 3px;
   padding-bottom: 5px;
+  cursor: pointer;
 }
 
 .navCuisine {
@@ -166,7 +167,6 @@ html, body {
 }
 
 .priceBody__content {
-  background-color: #666;
   width: 340px;
   height: 520px;
   position: absolute;
@@ -174,6 +174,38 @@ html, body {
   left: 50%;
   margin-left: -170px;
   margin-top: -240px;
+}
+
+.priceBody__0Btn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.priceBody__allBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 22px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
 }
 
 .navRating {
@@ -209,7 +241,6 @@ html, body {
 }
 
 .ratingBody__content {
-  background-color: #666;
   width: 340px;
   height: 520px;
   position: absolute;
@@ -219,17 +250,7 @@ html, body {
   margin-top: -240px;
 }
 
-.databox {
-  border: 2px solid;
-  margin: 1%;
-}
-
-#zomato_img-display {
-  height: 200px;
-  width: 100%;
-}
-
-.ratingBody__Btn {
+.ratingBody__1starBtn {
   height: 90px;
   background-color: #474459;
   width: 100%;
@@ -242,6 +263,38 @@ html, body {
   font-size: 3em;
   font-weight: 700;
   letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.ratingBody__allStarBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 22px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.resultsTop {
+  background-color: #312D3D;
+  height: 100%;
+  color: #FFF3ED;
+}
+
+.databox {
+  margin-bottom: 1px;
+}
+
+#zomato_img-display {
+  height: 200px;
+  width: 100%;
 }
 
 #slider-range {

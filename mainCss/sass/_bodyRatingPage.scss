@@ -10,7 +10,7 @@
     position: relative;
 }
 .ratingBody__content{
-    background-color: #666;
+    // background-color: #666;
     width: 340px;
     height: 520px;
     position: absolute;
@@ -18,4 +18,51 @@
     left: 50%;
     margin-left: -170px;
     margin-top: -240px;
+}
+.ratingBody__1starBtn{
+    height: 90px;
+    background-color: $midPurple;
+    width: 100%;
+    border: none;
+    border-radius: 35px;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: Source sans pro;
+    color: $white;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    
+}
+.ratingBody__allStarBtn{
+    height: 90px;
+    background-color: $midPurple;
+    width: 100%;
+    border: none;
+    border-radius: 35px;
+    margin-top: 22px;
+    padding-top: 0px;
+    font-family: Source sans pro;
+    color: $white;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.resultsTop{
+    background-color: $deepPurple;
+    height: 100%;
+    color: $white;
+}
+
+// results
+.databox{
+    // border:2px solid;
+    margin-bottom: 1px;
+}
+#zomato_img-display {
+    height:200px;
+    width:100%;
+    // border:black 1px solid;
 }

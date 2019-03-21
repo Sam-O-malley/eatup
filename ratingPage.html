@@ -19,59 +19,65 @@
   </head>
   <body>
 
-        <nav class="navbar navbar-default fixed-top navRating">
-            <div class="container-fluid navRating__left">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
-                        <img class="navRating__arrow" src="images/arrow.svg" alt="">
-                    </a>
-                </div>
-                <div class="navbar-right navRating__right">
-                    <a href="">
-                        <img class="navRating__logo" src="images/eatupLogo.svg" alt="">
-                    </a>
-                </div>
+    <!-- navigation -->
+    <nav class="navbar navbar-default fixed-top navRating">
+        <div class="container-fluid navRating__left">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navRating__arrow" src="images/arrow.svg" alt="">
+                </a>
             </div>
-        </nav>
-        <div id="ratingBodyContainer">
-            <div class="container-fluid ratingBody">
-                <div class="ratingBody__content">
-                    <!-- <a href="ratingDisplay.html">
-                        <button class="ratingBody__Btn" id="trigger" onclick="getData()">top rated</button>
-                    </a> -->
-                </div>
+            <div class="navbar-right navRating__right">
+                <a href="">
+                    <img class="navRating__logo" src="images/eatupLogo.svg" alt="">
+                </a>
             </div>
         </div>
+    </nav>
+
+<!-- body -->
+    <div id="ratingBodyContainer">
+        <div class="container-fluid ratingBody">
+            <div class="ratingBody__content">
+
+                <button class="ratingBody__1starBtn" onclick="getData()">top rated</button>
+                <!-- <button class="ratingBody__allStarBtn" onclick="getData()">2 star</button>
+                <button class="ratingBody__allStarBtn" onclick="getData()">3 star</button>
+                <button class="ratingBody__allStarBtn" onclick="getData()">4 star</button>
+                <button class="ratingBody__allStarBtn" onclick="getData()">5 star</button> -->
+
+            </div>
+           
+
+        </div>
+
+        <div class="resultsTop" id="zomato_data"></div>
+
+    </div>
 
 
 
    
-            <a href="ratingDisplay.html" class="ratingBody__Btn" id="trigger" onclick="getData()">top rated</a>
-       
+    <!-- <a  class="ratingBody__Btn" id="trigger" onclick="getData()">top rated</a> 
 
+    <img id="logo" src="images/eatupLogo.svg" id="trigger" onclick="getData()"></img>
 
-<!-- 
-    <img id="logo" src="images/eatupLogo.svg" id="trigger" onclick="getData()"></img> -->
-<!-- 
-    <div class="col-md-4">
-      <div id="zomato_data">
+    <div class="col-md-4"></div>
+    <div id="zomato_data"></div> -->
                 
-       </div>
+       
     
 
-      </div> -->
+      
 
   
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/script.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script> 
 
-  <!--<<script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>  -->
 </body>
 </html>

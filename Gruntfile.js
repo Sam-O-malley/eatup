@@ -11,6 +11,7 @@ module.exports = function(grunt) {
           dest: 'js/script.min.js'
         }
       },
+
       sass: {                              // Task
         dist: {                            // Target
           options: {                       // Target options
@@ -22,9 +23,11 @@ module.exports = function(grunt) {
           }
         }
       },
+
       jshint: {
         all: ['Gruntfile.js', 'js/script.js']
       },
+      
       watch: {
         css: {
           files: '**/*.scss',
