@@ -133,4 +133,14 @@ html, body {
   letter-spacing: 3px;
 }
 
+.databox {
+  border: 2px solid;
+  margin: 1%;
+}
+
+#zomato_img-display {
+  height: 200px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
