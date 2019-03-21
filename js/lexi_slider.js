@@ -1,7 +1,5 @@
 // google.charts.load('current', {'packages':['corechart']});
 // var mockarooKey;
-var minIncome = 0;
-var maxIncome = 100;
 // var minAge = 10;
 // var maxAge = 100;
 
@@ -22,34 +20,31 @@ $( function() {
   }
   });
 
-})
+});
 
-//   function getData(){
-//     $.ajax({
-//         url: 'https://my.api.mockaroo.com/ageincome2.json?key='+mockarooKey+'&min_income='+minIncome+'&max_income='+maxIncome+'&min_age='+minAge+'&max_age='+maxAge+"&count=100",
-//         dataType: 'json',
-//         type: 'get',
-//         success:function(data){
-//             console.log(data);
+var minIncome = 0;
+var maxIncome = 100;
+function getData() {
 
-//             var dataTable = new google.visualization.DataTable();
-//             // dataTable.addColumn("number", "Age");
-//             dataTable.addColumn("number", "Income");
+    $.ajax({
+           // url: 'https://developers.zomato.com/api/v2.1/reviews?res_id=7100538',
+             url: 'https://developers.zomato.com/api/v2.1/location_details?city_id=71&entity_id=36932&entity_type=group',
+    
+           dataType: 'json',
+           type: 'GET',
+           async: true,
+           beforeSend: function(xhr){xhr.setRequestHeader('user-key',
+           'a952103b6e48c2a40500499f78ff2c5b');
+       },  // This inserts the api key into the HTTP header
 
-//             for (var i = 0; i < data.length; i++) {
-//                 dataTable.addRow([data[i].age, data[i].annual_income])
-//             }
-
-//             var options = {
-//                 title: 'Age Vs Income Scatter Chart'
-//             }
-
-//             // var chart = new google.visualization.ScatterChart(document.getElementById('scatterChart'));
-//             // chart.draw(dataTable, options)
-//         },
-//         error:function(error){
-//             console.log(error);
-//             console.log('Something went wrong while getting the Mockaroo data')
-//         }
-//     })
-// }
+           success: function(response){
+               console.log(response);
+               var i =0;
+               for (i = 0; i < response.best_rated_restaurant.length; i++){
+              //  console.log(response.best_rated_restaurant[0].restaurant.name, response.best_rated_restaurant[0].restaurant.location.address, response.best_rated_restaurant[0].restaurant.average_cost_for_two,  );
+               console.log(response.best_rated_restaurant[i].restaurant.average_cost_for_two); 
+              }
+            }
+       });
+    
+  }
