@@ -46,15 +46,9 @@ url: 'https://developers.zomato.com/api/v2.1/location_details?entity_id=71&entit
       console.log(api_container.innerHTML += ('<h4 class=card-title>' + response.best_rated_restaurant[i].restaurant.cuisines));
 
   
-          console.log(zomato_api);  
-            zomato_api.appendChild(api_container);
-         }
-
-
-
-
-
-
+      console.log(zomato_api);  
+        zomato_api.appendChild(api_container);
+      }
 
 
       } 
@@ -63,4 +57,42 @@ url: 'https://developers.zomato.com/api/v2.1/location_details?entity_id=71&entit
     });
 
     }
+
+// cusines
+    function getData_cuisines() {
+
+      $.ajax({
+      url: 'https://developers.zomato.com/api/v2.1/cuisines?city_id=71',
+      
+        dataType: 'json',
+        type: 'GET',
+        async: true,
+        beforeSend: function(xhr){ xhr.setRequestHeader('user-key','0d4d795b7b6b0e26ad6f107918004ec4');
+           },// This inserts the api key into the HTTP header
+             success: function(response)
+           {
+           console.log(response);
+      
+             var zomato_api = document.getElementById('zomatoCuisine_data');
+      
+           for(var i = 0; i < response.cuisines.length; i++){
+      
+          var api_container = document.createElement('div');
+      
+      
+          api_container.className += 'card-body databox';
+      
+      
+          api_container.innerHTML += ( '<h3 class=card-title id="restaurant_title">' + response.cuisines[i].cuisine.cuisine_name);
+      
+      
+               console.log(zomato_api);
+               zomato_api.appendChild(api_container);
+              }
+           }
+      
+      
+         });
+      
+         }
 
