@@ -25,13 +25,13 @@ url: 'https://developers.zomato.com/api/v2.1/location_details?entity_id=71&entit
           
      var api_container = document.createElement('div');
 
-     console.log(response.best_rated_restaurant[0].restaurant.offers[i].photos_url);
+    //  console.log(response.best_rated_restaurant[0].restaurant.offers[i].photos_url);
 
-        var zomato_img = document.createElement("img");
+    //     var zomato_img = document.createElement("img");
 
-        zomato_img.src = (response.best_rated_restaurant[i].restaurant.photos_url);
+    //     zomato_img.src = (response.best_rated_restaurant[i].restaurant.photos_url);
 
-        var src = document.getElementById('zomato_img-display');
+    //     var src = document.getElementById('zomato_img-display');
 
         // src.appendChild(zomato_img);
 

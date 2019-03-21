@@ -133,6 +133,16 @@ html, body {
   letter-spacing: 3px;
 }
 
+<<<<<<< HEAD
+.databox {
+  border: 2px solid;
+  margin: 1%;
+}
+
+#zomato_img-display {
+  height: 200px;
+  width: 100%;
+=======
 #slider-range {
   width: 50%;
   height: 30px;
@@ -143,6 +153,7 @@ html, body {
   border: 0;
   color: #f6931f;
   font-weight: bold;
+>>>>>>> 30cb3a60c11aefd5bc52fda50c0cfbeaaf09947a
 }
 
 /*# sourceMappingURL=style.css.map */
