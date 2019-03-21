@@ -3,6 +3,9 @@
 // var minAge = 10;
 // var maxAge = 100;
 
+var minAverage = 0;
+var maxAverage = 100;
+
 $( function() {
   $( "#slider-range" ).slider({
     range: true,
@@ -11,8 +14,8 @@ $( function() {
     values: [ 0, 100 ],
     slide: function( event, ui ) {
       $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      minIncome = ui.values[ 0 ];
-      maxIncome = ui.values[ 1 ];
+      minAverage = ui.values[ 0 ];
+      maxAverage = ui.values[ 1 ];
 
   },
   stop:function(event, ui){
@@ -22,8 +25,6 @@ $( function() {
 
 });
 
-var minIncome = 0;
-var maxIncome = 100;
 function getData() {
 
     $.ajax({
