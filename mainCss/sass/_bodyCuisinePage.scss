@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+.cuisineBody{
+    min-height:100vh;
+    min-width: 100%;
+    background-color: $deepPurple;
+}
+.cuisineBodyContainer{
+    min-height: 100%;
+    position: relative;
+}
+.cuisineBody__content{
+    // background-color: #666;
+    width: 340px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: -240px;
+}
+.cuisineBody__sushiBtn{
+    height: 90px;
+    background-color: $midPurple;
+    width: 100%;
+    border: none;
+    border-radius: 35px;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: Source sans pro;
+    color: $white;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    
+}
+.cuisineBody__otherBtn{
+    height: 90px;
+    background-color: $midPurple;
+    width: 100%;
+    border: none;
+    border-radius: 35px;
+    margin-top: 22px;
+    padding-top: 0px;
+    font-family: Source sans pro;
+    color: $white;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    
+}

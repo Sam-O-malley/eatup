@@ -8,8 +8,307 @@
 
 html, body {
   height: 100%;
-  width: 375px;
+  width: 100%;
+}
+
+.navMain {
+  height: 80px;
+}
+
+.navMain__right {
+  padding: 0px;
+  padding-top: 10px;
+}
+
+.navMain__question {
+  height: 55px;
+}
+
+.mainBody {
+  min-height: 100vh;
+  min-width: 100%;
+  background: url(../../images/wellyPicBackground.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.mainBodyContainer {
+  min-height: 100%;
+  position: relative;
+}
+
+.mainBody__content {
+  width: 320px;
+  height: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -230px;
+}
+
+.mainBody__priceBtn {
+  height: 100px;
   background-color: #312D3D;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 25px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 4em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.navCuisine {
+  height: 80px;
+  background-color: #312D3D;
+}
+
+.navCuisine__right {
+  padding: 0px;
+}
+
+.navCuisine__logo {
+  height: 55px;
+}
+
+.navCuisine__arrow {
+  height: 50px;
+}
+
+.navCuisine__left {
+  padding: 0px;
+}
+
+.cuisineBody {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #312D3D;
+}
+
+.cuisineBodyContainer {
+  min-height: 100%;
+  position: relative;
+}
+
+.cuisineBody__content {
+  width: 340px;
+  height: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -240px;
+}
+
+.cuisineBody__sushiBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.cuisineBody__otherBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 22px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.navPrice {
+  height: 80px;
+  background-color: #312D3D;
+}
+
+.navPrice__right {
+  padding: 0px;
+}
+
+.navPrice__logo {
+  height: 55px;
+}
+
+.navPrice__arrow {
+  height: 50px;
+}
+
+.navPrice__left {
+  padding: 0px;
+}
+
+.priceBody {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #312D3D;
+}
+
+.priceBodyContainer {
+  min-height: 100%;
+  position: relative;
+}
+
+.priceBody__content {
+  width: 340px;
+  height: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -240px;
+}
+
+.priceBody__0Btn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.priceBody__allBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 22px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.navRating {
+  height: 80px;
+  background-color: #312D3D;
+}
+
+.navRating__right {
+  padding: 0px;
+}
+
+.navRating__logo {
+  height: 55px;
+}
+
+.navRating__arrow {
+  height: 50px;
+}
+
+.navRating__left {
+  padding: 0px;
+}
+
+.ratingBody {
+  height: 100vh;
+  min-width: 100%;
+  background-color: #312D3D;
+}
+
+.ratingBodyContainer {
+  min-height: 100%;
+  position: relative;
+}
+
+.ratingBody__content {
+  width: 340px;
+  height: 520px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top: -240px;
+}
+
+.ratingBody__1starBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 0px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.ratingBody__allStarBtn {
+  height: 90px;
+  background-color: #474459;
+  width: 100%;
+  border: none;
+  border-radius: 35px;
+  margin-top: 22px;
+  padding-top: 0px;
+  font-family: Source sans pro;
+  color: #FFF3ED;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.resultsTop {
+  background-color: #312D3D;
+  height: 100%;
+  color: #FFF3ED;
+}
+
+.databox {
+  margin-bottom: 1px;
+}
+
+#zomato_img-display {
+  height: 200px;
+  width: 100%;
+}
+
+#slider-range {
+  width: 50%;
+  height: 30px;
+  background-color: white;
+}
+
+#amount {
+  border: 0;
+  color: #f6931f;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

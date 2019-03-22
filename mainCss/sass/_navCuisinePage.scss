@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+.navCuisine{
+    height: 80px;
+    background-color: $deepPurple;
+}
+.navCuisine__right{
+    padding: 0px;
+}
+.navCuisine__logo{
+    height: 55px;
+}
+.navCuisine__arrow{
+    height: 50px;
+}
+.navCuisine__left{
+    padding: 0px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cuisine page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/vnd.microsoft.icon">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700" rel="stylesheet"> 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="mainCss/css/style.css"/>
+   
+    
+</head>
+<body>
+    
+<!-- navigation -->
+    <nav class="navbar navbar-default fixed-top navCuisine">
+        <div class="container-fluid navCuisine__left">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navCuisine__arrow" src="images/arrow.svg" alt="">
+                </a>
+            </div>
+            <div class="navbar-right navCuisine__right">
+                <a href="">
+                    <img class="navCuisine__logo" src="images/eatupLogo.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- body -->
+    <div id="cuisineBodyContainer">
+        <div class="container-fluid cuisineBody">
+            <div class="cuisineBody__content">
+                
+                <button class="cuisineBody__sushiBtn" onclick="getData_cuisines()">sushi</button>
+            
+                <button class="cuisineBody__otherBtn">fast food</button>
+            
+                <button class="cuisineBody__otherBtn">bar food</button>
+            
+                <button class="cuisineBody__otherBtn">vegetarian</button>
+            
+                <button class="cuisineBody__otherBtn">indian</button>
+     
+            </div>
+        </div>
+
+        <div class="resultsTop" id="zomatoCuisine_data"></div>
+
+    </div>    
+
+
+
+
+
+    
+
+<body>   
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="js/script.js"></script> 
+</body>
+</html>
